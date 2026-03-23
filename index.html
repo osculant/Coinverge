@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coinverge — Premium Crypto Consultancy</title>
+    <meta
+      name="description"
+      content="Expert crypto investment advisory, portfolio management and security guidance for US clients."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .yellow-btn {
+        background-color: #ffd700;
+        color: #1a1a1a;
+        transition: all 0.3s ease;
+      }
+      .yellow-btn:hover {
+        background-color: #ffea3a;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(255, 215, 0, 0.25);
+      }
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+      .section-transition {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.8s ease-out;
+      }
+      .section-transition.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
+    <!-- Top Bar -->
+    <div class="bg-gray-50 border-b border-gray-100 py-2.5 text-sm">
+      <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div class="flex gap-6 text-gray-600">
+          <a
+            href="tel:+13055550123"
+            class="flex items-center gap-2 hover:text-[#FFD700] transition"
+          >
+            <i class="fas fa-phone-alt"></i> +1 (305) 555-0123
+          </a>
+          <a
+            href="mailto:contact@coinverge.com"
+            class="flex items-center gap-2 hover:text-[#FFD700] transition"
+          >
+            <i class="fas fa-envelope"></i> contact@coinverge.com
+          </a>
+        </div>
+        <div class="flex gap-5 text-gray-500">
+          <a href="#" class="hover:text-[#FFD700]"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFD700]"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="hover:text-[#FFD700]"
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center"
+      >
+        <div class="text-3xl font-bold tracking-tight">
+          <span class="text-[#FFD700]">Coin</span
+          ><span class="text-gray-900">verge</span>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-10 font-medium">
+          <a href="#home" class="hover:text-[#FFD700] transition">Home</a>
+          <a href="#services" class="hover:text-[#FFD700] transition"
+            >Services</a
+          >
+          <a href="#about" class="hover:text-[#FFD700] transition">About</a>
+          <a href="#process" class="hover:text-[#FFD700] transition"
+            >How It Works</a
+          >
+          <a href="#blog" class="hover:text-[#FFD700] transition">Blog</a>
+          <a href="#testimonials" class="hover:text-[#FFD700] transition"
+            >Testimonials</a
+          >
+          <a href="#contact" class="hover:text-[#FFD700] transition">Contact</a>
+        </nav>
+
+        <a
+          href="#contact"
+          class="yellow-btn px-8 py-3.5 rounded-full font-semibold shadow-md hidden md:block"
+        >
+          Get Started
+        </a>
+
+        <button
+          class="md:hidden text-2xl"
+          onclick="
+            document.getElementById('mobile-menu').classList.toggle('hidden')
+          "
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t px-6 py-8 space-y-6 font-medium"
+      >
+        <a href="#home" class="block py-2">Home</a>
+        <a href="#services" class="block py-2">Services</a>
+        <a href="#about" class="block py-2">About</a>
+        <a href="#process" class="block py-2">How It Works</a>
+        <a href="#blog" class="block py-2">Blog</a>
+        <a href="#testimonials" class="block py-2">Testimonials</a>
+        <a href="#contact" class="block py-2">Contact</a>
+        <a
+          href="#contact"
+          class="yellow-btn block text-center py-4 rounded-full font-bold mt-4"
+        >
+          Get Started
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#FFD700]/10 rounded-full blur-[120px] -translate-y-1/2"
+      ></div>
+      <div
+        class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[#FFD700]/5 rounded-full blur-[100px] translate-y-1/2"
+      ></div>
+
+      <div
+        class="absolute inset-0 opacity-[0.4]"
+        style="
+          background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+          background-size: 32px 32px;
+        "
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 text-center z-10 pt-20">
+        <div
+          data-aos="fade-down"
+          class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-gray-800 text-sm font-bold mb-8 shadow-sm"
+        >
+          <span class="flex h-2 w-2">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFD700] opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-2 w-2 bg-[#FFD700]"
+            ></span>
+          </span>
+          SEC-Registered Advisory 2026
+        </div>
+
+        <h1
+          data-aos="zoom-out-up"
+          class="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter text-gray-900 mb-8"
+        >
+          FUTURE OF <br />
+          <span class="relative inline-block">
+            INVESTING
+            <div
+              class="absolute bottom-2 left-0 w-full h-3 bg-[#FFD700] -z-10 opacity-70"
+            ></div>
+          </span>
+        </h1>
+
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-lg md:text-2xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed font-medium"
+        >
+          Institutional-grade crypto management. We handle the complexity,
+          <br class="hidden md:block" />
+          you enjoy the results.
+        </p>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="flex flex-col sm:flex-row gap-6 justify-center items-center"
+        >
+          <a
+            href="#contact"
+            class="group relative px-12 py-6 bg-[#FFD700] text-black text-xl font-bold rounded-2xl overflow-hidden transition-all hover:shadow-[0_20px_40px_-15px_rgba(255,215,0,0.4)] active:scale-95"
+          >
+            Get Started Now
+          </a>
+
+          <a
+            href="#services"
+            class="px-12 py-6 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white rounded-2xl text-xl font-bold transition-all flex items-center gap-2"
+          >
+            Our Strategies
+          </a>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="600"
+          class="mt-24 pt-12 border-t border-gray-100"
+        >
+          <p
+            class="text-xs uppercase tracking-[0.3em] text-gray-400 font-bold mb-8"
+          >
+            As Featured In
+          </p>
+          <div
+            class="flex flex-wrap justify-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all"
+          >
+            <span class="text-2xl font-bold text-gray-800">FORBES</span>
+            <span class="text-2xl font-bold text-gray-800">BLOOMBERG</span>
+            <span class="text-2xl font-bold text-gray-800">REUTERS</span>
+            <span class="text-2xl font-bold text-gray-800">TECHCRUNCH</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            Our Core Services
+          </h2>
+          <p class="text-xl text-gray-600 mt-4 max-w-3xl mx-auto">
+            Tailored solutions for serious cryptocurrency investors in the
+            United States
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition">
+            <div class="text-5xl mb-6 text-[#FFD700]">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">
+              Crypto Investment Advisory
+            </h3>
+            <p class="text-gray-600">
+              Personalized strategies aligned with your goals, risk tolerance
+              and tax situation.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition">
+            <div class="text-5xl mb-6 text-[#FFD700]">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Portfolio Management</h3>
+            <p class="text-gray-600">
+              Active oversight, rebalancing, tax optimization and 24/7
+              performance monitoring.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition">
+            <div class="text-5xl mb-6 text-[#FFD700]">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Security Audits</h3>
+            <p class="text-gray-600">
+              Wallet & smart contract reviews, multi-sig setup and
+              institutional-grade custody guidance.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition">
+            <div class="text-5xl mb-6 text-[#FFD700]">
+              <i class="fas fa-search-dollar"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Market Analysis</h3>
+            <p class="text-gray-600">
+              On-chain data, macro trends and proprietary research reports
+              delivered weekly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              Trusted Crypto Expertise
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+              Coinverge brings together former Wall Street and crypto-native
+              professionals to deliver institutional-quality advisory services
+              to private clients across the United States. We focus on long-term
+              wealth preservation and intelligent growth in digital assets.
+            </p>
+            <div class="grid grid-cols-3 gap-8 text-center">
+              <div>
+                <div class="text-4xl font-bold text-[#FFD700]">50+</div>
+                <div class="text-gray-600 mt-2">Clients</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-[#FFD700]">$250M+</div>
+                <div class="text-gray-600 mt-2">AUM</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-[#FFD700]">4.9/5</div>
+                <div class="text-gray-600 mt-2">Rating</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="SarahMitchell-e1761074383522.jpg"
+                alt="Team Member"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h4 class="font-semibold text-lg">Sarah Mitchell</h4>
+                <p class="text-[#FFD700] text-sm">Founder & CEO</p>
+                <p class="text-gray-600 text-sm mt-3">
+                  Ex-Goldman Sachs • 12+ years in digital assets
+                </p>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src="download.avif"
+                alt="Team Member"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h4 class="font-semibold text-lg">James Carter</h4>
+                <p class="text-[#FFD700] text-sm">Chief Investment Officer</p>
+                <p class="text-gray-600 text-sm mt-3">
+                  CFA • Former Coinbase Institutional
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="process" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            How We Work Together
+          </h2>
+          <p class="text-xl text-gray-600 mt-4">
+            A clear, structured process designed for trust and results
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="w-20 h-20 mx-auto bg-[#FFD700] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg"
+            >
+              1
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Initial Consultation</h3>
+            <p class="text-gray-600">
+              30–60 min call to understand your goals and current position.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 mx-auto bg-[#FFD700] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg"
+            >
+              2
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Custom Strategy</h3>
+            <p class="text-gray-600">
+              Tailored plan with asset allocation, risk controls & tax
+              considerations.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 mx-auto bg-[#FFD700] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg"
+            >
+              3
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Implementation</h3>
+            <p class="text-gray-600">
+              Secure execution, wallet setup, and ongoing portfolio adjustments.
+            </p>
+          </div>
+          <div class="text-center">
+            <div
+              class="w-20 h-20 mx-auto bg-[#FFD700] text-white rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-lg"
+            >
+              4
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Continuous Review</h3>
+            <p class="text-gray-600">
+              Monthly reports, quarterly deep dives, and 24/7 support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Insights -->
+    <section id="blog" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-16"
+        >
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            Latest Insights
+          </h2>
+          <a
+            href="#"
+            class="mt-4 md:mt-0 text-[#FFD700] font-medium flex items-center gap-2 hover:underline"
+          >
+            View All Articles <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="Bitcoin-ETFs-Roar-Into-2026-With-1.2B-Inflows-Signaling-Major-Institutional-Shift-1.webp"
+              alt="Bitcoin ETF"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-8">
+              <div class="text-sm text-gray-500 mb-3">
+                March 10, 2026 • 7 min read
+              </div>
+              <h3 class="text-xl font-semibold mb-4 leading-tight">
+                Bitcoin ETF Flows: What Institutions Are Doing in 2026
+              </h3>
+              <p class="text-gray-600 mb-6 line-clamp-3">
+                Latest data and implications for private portfolios as
+                institutional adoption reaches new heights...
+              </p>
+              <a href="#" class="text-[#FFD700] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="676ce7a3dd0ed26c47d3fd72_6704c6048316ccc40993b86d_6704c5def98c384cca30aa43_17.jpeg"
+              alt="DeFi Yields"
+              class="w-800 h-56 w-full object-cover"
+            />
+            <div class="p-8">
+              <div class="text-sm text-gray-500 mb-3">
+                March 05, 2026 • 5 min read
+              </div>
+              <h3 class="text-xl font-semibold mb-4 leading-tight">
+                Maximizing DeFi Yields: A Risk-Adjusted Guide
+              </h3>
+              <p class="text-gray-600 mb-6 line-clamp-3">
+                How to navigate liquidity pools and staking protocols without
+                over-exposing your capital to smart contract risk...
+              </p>
+              <a href="#" class="text-[#FFD700] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="Global-crypto-regulation-newweb.png"
+              alt="Crypto Regulations"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-8">
+              <div class="text-sm text-gray-500 mb-3">
+                February 28, 2026 • 10 min read
+              </div>
+              <h3 class="text-xl font-semibold mb-4 leading-tight">
+                The Impact of New Global Crypto Regulations
+              </h3>
+              <p class="text-gray-600 mb-6 line-clamp-3">
+                What the latest compliance standards mean for your 2026 tax
+                strategy and cross-border digital asset transfers...
+              </p>
+              <a href="#" class="text-[#FFD700] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+            What Our Clients Say
+          </h2>
+          <p class="text-gray-600 mt-4 text-lg">
+            Trusted by high-net-worth individuals and family offices worldwide.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-4xl text-[#FFD700] opacity-30 mb-4">“</div>
+              <p class="text-gray-700 italic mb-6">
+                "Coinverge transformed how we approach digital assets —
+                professional, transparent, and genuinely client-first."
+              </p>
+            </div>
+            <div>
+              <div class="text-[#FFD700] text-sm mb-2">★★★★★</div>
+              <p class="font-bold text-gray-900">Emily R. Thompson</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider">
+                High-Net-Worth Investor • California
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-4xl text-[#FFD700] opacity-30 mb-4">“</div>
+              <p class="text-gray-700 italic mb-6">
+                "Their DeFi strategy calls are world-class. They helped us
+                navigate yield farming safely while managing our risk parameters
+                perfectly."
+              </p>
+            </div>
+            <div>
+              <div class="text-[#FFD700] text-sm mb-2">★★★★★</div>
+              <p class="font-bold text-gray-900">Marcus V. Chen</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider">
+                Tech Founder • Singapore
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-4xl text-[#FFD700] opacity-30 mb-4">“</div>
+              <p class="text-gray-700 italic mb-6">
+                "Tax season used to be a nightmare with 1000+ on-chain
+                transactions. Coinverge's reporting saved us weeks of manual
+                work."
+              </p>
+            </div>
+            <div>
+              <div class="text-[#FFD700] text-sm mb-2">★★★★★</div>
+              <p class="font-bold text-gray-900">Sarah Jenkins</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider">
+                Portfolio Manager • London
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-4xl text-[#FFD700] opacity-30 mb-4">“</div>
+              <p class="text-gray-700 italic mb-6">
+                "The level of security and peace of mind they provide is
+                unmatched. I finally feel comfortable having crypto as 20% of my
+                net worth."
+              </p>
+            </div>
+            <div>
+              <div class="text-[#FFD700] text-sm mb-2">★★★★★</div>
+              <p class="font-bold text-gray-900">David G. Robertson</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider">
+                Real Estate Mogul • Dubai
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="text-4xl text-[#FFD700] opacity-30 mb-4">“</div>
+              <p class="text-gray-700 italic mb-6">
+                "Institutional-grade insights delivered with a personal touch.
+                They actually listen to my long-term goals instead of pushing
+                trades."
+              </p>
+            </div>
+            <div>
+              <div class="text-[#FFD700] text-sm mb-2">★★★★★</div>
+              <p class="font-bold text-gray-900">Dr. Elena Rodriguez</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider">
+                Private Physician • New York
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16"
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-6">
+          <details class="bg-white rounded-xl shadow-md">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              Is Coinverge a registered investment advisor?
+              <i class="fas fa-chevron-down transition"></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              Yes — Coinverge is an SEC-registered investment adviser
+              specializing in digital assets.
+            </div>
+          </details>
+          <details class="bg-white rounded-xl shadow-md">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              What types of clients do you serve?
+              <i class="fas fa-chevron-down transition"></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              Accredited investors and high-net-worth individuals seeking
+              professional crypto guidance.
+            </div>
+          </details>
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              How do you ensure the security of my assets?
+              <i
+                class="fas fa-chevron-down transition-transform group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              Coinverge never takes direct custody of your private keys. We work
+              with institutional-grade custodians like Coinbase Custody and
+              Fidelity Digital Assets to ensure your funds are protected by
+              multi-signature security and insurance.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              Do you provide tax reporting for crypto transactions?
+              <i
+                class="fas fa-chevron-down transition-transform group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              Yes, we provide comprehensive end-of-year tax reports (8949 forms)
+              and integrate directly with popular tax software like CoinTracker
+              and Koinly to make your filing process seamless.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              Is there a minimum investment requirement?
+              <i
+                class="fas fa-chevron-down transition-transform group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              To provide the most value through our active management and
+              advisory, we typically recommend a minimum starting portfolio of
+              $50,000 for the Starter plan.
+            </div>
+          </details>
+
+          <details class="bg-white rounded-xl shadow-md group">
+            <summary
+              class="font-semibold p-6 cursor-pointer flex justify-between items-center"
+            >
+              Can I cancel my subscription at any time?
+              <i
+                class="fas fa-chevron-down transition-transform group-open:rotate-180"
+              ></i>
+            </summary>
+            <div class="px-6 pb-6 text-gray-700">
+              Absolutely. You can cancel your subscription at the end of any
+              billing cycle. We don't believe in long-term lock-ins; our goal is
+              to earn your trust every single month.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+          <p class="text-lg text-gray-700 mb-10">
+            Schedule a confidential consultation or ask any question — we're
+            here to help.
+          </p>
+
+          <form
+            action="https://formsubmit.co/your@email.com"
+            method="POST"
+            class="space-y-6"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              class="w-full p-5 rounded-xl border border-gray-200 focus:border-[#FFD700] outline-none"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              class="w-full p-5 rounded-xl border border-gray-200 focus:border-[#FFD700] outline-none"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="w-full p-5 rounded-xl border border-gray-200 focus:border-[#FFD700] outline-none"
+            />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+              class="w-full p-5 rounded-xl border border-gray-200 focus:border-[#FFD700] outline-none resize-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="yellow-btn px-12 py-5 rounded-full font-semibold text-lg shadow-lg w-full md:w-auto"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-10">
+          <div class="space-y-8">
+            <div class="flex items-start gap-5">
+              <div class="text-3xl text-[#FFD700]">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Miami Office</h4>
+                <p class="text-gray-600">
+                  Brickell Avenue, Miami, FL 33131<br />United States
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-5">
+              <div class="text-3xl text-[#FFD700]">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg">Email</h4>
+                <p class="text-gray-600">contact@coinverge.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 rounded-xl overflow-hidden border border-gray-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.058!2d-80.189!3d25.761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6f3e5a5c5b5%3A0x2c5f0b5e0f5c5b5e!2sBrickell%2C%20Miami%2C%20FL!5e0!3m2!1sen!2sus!4v1690000000000"
+              width="100%"
+              height="320"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="bg-[#FFD700] py-20 text-center">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+          Ready to Secure Your Crypto Future?
+        </h2>
+        <p class="text-xl text-gray-800 mb-10 max-w-3xl mx-auto">
+          Book your no-obligation consultation today and take the first step
+          toward professional-grade crypto management.
+        </p>
+        <a
+          href="#contact"
+          class="bg-gray-900 text-white px-16 py-7 rounded-full text-xl font-semibold shadow-2xl hover:bg-gray-800 transition inline-block"
+        >
+          Get Started Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+        <div>
+          <div class="text-3xl font-bold mb-6">
+            <span class="text-[#FFD700]">Coin</span>verge
+          </div>
+          <p class="text-gray-400">
+            Premium crypto advisory services for discerning U.S. investors.
+          </p>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold mb-6 uppercase text-sm tracking-wider"
+          >
+            Quick Links
+          </h4>
+          <div class="space-y-3">
+            <a href="#home" class="block hover:text-[#FFD700] transition"
+              >Home</a
+            >
+            <a href="#services" class="block hover:text-[#FFD700] transition"
+              >Services</a
+            >
+            <a href="#about" class="block hover:text-[#FFD700] transition"
+              >About</a
+            >
+            <a href="#blog" class="block hover:text-[#FFD700] transition"
+              >Blog</a
+            >
+          </div>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold mb-6 uppercase text-sm tracking-wider"
+          >
+            Newsletter
+          </h4>
+          <p class="text-gray-400 mb-4 text-sm">
+            Weekly market updates & insights
+          </p>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="flex-1 p-4 rounded-l-xl bg-gray-800 border border-gray-700 focus:border-[#FFD700] outline-none"
+            />
+            <button
+              class="bg-[#FFD700] text-gray-900 px-6 rounded-r-xl font-semibold"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-semibold mb-6 uppercase text-sm tracking-wider"
+          >
+            Legal
+          </h4>
+          <p class="text-sm text-gray-500">
+            Coinverge LLC is a registered investment adviser. Cryptocurrency
+            involves substantial risk of loss. This site is for informational
+            purposes only and does not constitute investment advice.
+            <br /><br />© 2026 Coinverge. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Simple intersection observer for fade-in sections
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document.querySelectorAll(".section-transition").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
